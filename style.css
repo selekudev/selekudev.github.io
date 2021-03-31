@@ -235,4 +235,9 @@ html,body{
 	.navbar .nav-right button{
 		display: block;
 	}
+
+	.card{
+		width: 90%;
+		margin: 10px 0px;
+	}
 }
