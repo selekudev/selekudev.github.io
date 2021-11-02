@@ -7,6 +7,7 @@ let g = document.querySelector(".on-mobile-nav");
 let mode = document.querySelectorAll("#mode");
 
 
+
 a.onclick = ()=>{
 	b.classList.toggle("on-mobile-active");
 }
