@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Seleku</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <link rel="stylesheet" href="github-markdown.css">
+        <!-- <link rel="stylesheet" href="https://raw.githubusercontent.com/sindresorhus/github-markdown-css/main/github-markdown-light.css"> -->
+        <style>
+        *{
+        text-align: justify;
+        }
+        .markdown-body {
+        box-sizing: border-box;
+        min-width: 200px;
+        max-width: 980px;
+        margin: 0 auto;
+        padding: 45px;
+        }
+        @media (max-width: 767px) {
+        .markdown-body {
+        padding: 15px;
+        }
+        }
+        </style>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/atom-one-dark.min.css" integrity="sha512-Jk4AqjWsdSzSWCSuQTfYRIF84Rq/eV0G2+tu07byYwHcbTGfdmLrHjUSwvzp5HvbiqK4ibmNwdcG49Y5RGYPTg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
+
+        <style>
+
+            .content-d{
+
+                width: 100%;
+                height: auto;
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+
+                flex-wrap: wrap;
+
+            }
+
+            ::-webkit-scrollbar {
+              width: 1px;
+            }
+
+             .responsive-content{
+                display: none;
+             }
+
+            .content-d .left-content-d{
+                width: 20%;
+                height: auto;
+                background: white;
+                position: -webkit-sticky; /* Safari */
+                padding-left: 20px;
+                padding-bottom: 30px;
+                position: sticky;
+                top: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                overflow-y: auto;
+                flex-direction: column;
+                transition: 0.3s all;
+                background: white;
+                position: -webkit-sticky; /* Safari */
+                padding-left: 20px;
+                padding-bottom: 30px;
+                position: sticky;top: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                overflow-y: auto;
+                flex-direction: column;
+                transition: 0.3s all;
+            }
+
+            .content-d .left-content-d h1{
+                width: 100%;
+                padding: 20px;
+                padding-top: 100px;
+            }
+
+            .content-d .left-content-d .menu{
+
+                width: 100%;
+                height: auto;
+
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                flex-wrap: wrap;
+                padding: 10px 20px;
+                cursor: pointer;
+
+
+            }
+
+            .content-d .right-content-d{
+
+                width: 80%;
+                height: 100%;
+
+            }
+
+            .content-d .left-content-d .show{
+                width: 300px;
+                transition: 0.3s all;
+            }
+
+            @media screen and (min-width: 300px) and (max-width: 1160px){
+
+                .content-d .left-content-d{
+
+                    position: fixed;
+                    left: 0px;
+                    background: white;
+                    z-index: 3;
+                    width: 0px;
+                    padding: 0px;
+                    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+
+                    overflow-x: hidden;
+                    transition: 0.3s all;
+
+                }
+
+.left-content-d.show {
+    width: 300px;
+}
+
+                
+                .content-d{
+                    padding-bottom: 50px;
+                }
+
+                .responsive-content{
+
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 10px;
+                    position: fixed;
+                    bottom: 10px;
+                    right: 20px;
+                    background: white;
+                    z-index: 4;
+                    box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+
+                }
+
+                .content-d .left-content-d .menu{
+
+                    width: 300px;
+                    height: auto;
+
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    padding: 10px 20px;
+
+
+                }
+
+                .content-d .right-content-d{
+                    width: 100%;
+                }
+
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="left">
+                
+                <h3 class="title">Seleku</h3>
+            </div>
+            <div class="right">
+                
+                <li>
+                    <a href="documentation.html">Documentation</a>
+                </li>
+                <li>
+                    <a href="API.html">API</a>
+                </li>
+                <li>
+                    <a href="community.html">Community</a>
+                </li>
+            </div>
+        </div>
+
+        <div id="show-menu" class="responsive-content">
+            <i class='fas fa-bars'></i>
+        </div>
+        
+        <div class="content-d">
+            
+
+            <div class="left-content-d show">
+
+                <h1># list content</h1>
+
+                <div class="menu">
+                    
+                    Apa itu seleku?
+
+                </div>
+                
+            </div>
+
+            <div class="right-content-d markdown-body">
+            
+            <h1 id="seleku-js">Seleku JS</h1>
+            <h1 id="alpha-version">alpha version</h1>
+            <h2 id="-konsep">🧠 konsep</h2>
+            <p>seleku merupakan framework frontend javascript yang di desain khusus dengan berbagai fitur seperti reactivity, data binding dan berbagai macam fitur lain, seleku menggunakan vanilla js sehingga akan berjalan cepat di web browser</p>
+            <h2 id="kenapa-seleku-">kenapa seleku ?</h2>
+            <p>saat ini terdapat banyak framework frontend modern seperti react, svelte dan lain - lain
+            seleku memiliki cara kerja yang dengan tujuan yang sama seperti framewrok frontend modern lain tetapi seleku memiliki cara kerja yang berbeda</p>
+            <h1 id="-user-guide">🕹 User Guide</h1>
+            <h2 id="-instalasi">📥 instalasi</h2>
+            <p>untuk melakukan penginstalan seleku anda membutuhkan beberapa hal berikut</p>
+            <ol>
+                <li>👉 node js</li>
+                <li>👉 pemahaman tentang javascript (es5 hingga versi terbaru)</li>
+                <li>👉 dan penggunaan npm (node package manager)</li>
+            </ol>
+            <p>untuk melakukan instalasi cli anda dapat menginstall seleku secara global melalui npm di komputer anda dengan command atau perintah berikut</p>
+                    <pre><code class="lang-bash"><span class="hljs-built_in">npm</span> i -g seleku@latest
+        </code></pre>
+        <p>kemudian lakukan pengecekan dengan mengetikan </p>
+            <pre><code class="lang-bash"><span class="hljs-attribute">seleku</span>
+    </code></pre>
+    <p>setelah membuat template silahkan masuk ke folder yang telah di buat dan silahkan jalankan peritah berikut</p>
+    <p><code>npm i</code> kemduian <code>npm run dev</code> untuk development mode dan <code>npm run build</code> untuk menjalankan build mode</p>
+    <h2 id="-pemahaman-dasar">🧠 pemahaman dasar</h2>
+    <p>seleku menggunakan component dengan bentukan virtual DOM dan melakukan update melalui DOM TREE</p>
+    <p>seleku melakukan binding dari javascript ke html menggunakan props, props merupakan object yang menjadi penghubung antara data yang terdapat di javascript ke html</p>
+    <h3 id="-struktur-dasar">⚒ struktur dasar</h3>
+    <p>seleku menggunakan struktur seperti html biasa akan tetapi seleku hanya akan mengambil satu element pertama yang akan di jadikan sebagai component sebagai contoh</p>
+    <pre><code class="lang-html"><span class="hljs-comment">&lt;!--h1 yang akan di jadikan sebagai component--&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span> hello world <span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+    <span class="hljs-comment">&lt;!--div akan di abaikan karena hanya 1 element utama yang akan di ambil--&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card"</span>&gt;</span> hello world <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+<p>untuk mengatasi hal tersebut di sarankan untuk memuat semua element di dalam 1 tag khusus seperti div atau sejenisnya (semua element umumnya bisa)</p>
+<p>untuk memasukan custom script dari seleku cukup masukan tag script ke dalam struktur contoh</p>
+<pre><code class="lang-html"><span class="hljs-comment">&lt;!--h1 yang akan di jadikan sebagai component--&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span> hello world <span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+<span class="hljs-comment">&lt;!--div akan di abaikan karena hanya 1 element utama yang akan di ambil--&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card"</span>&gt;</span> hello world <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"hello world"</span>);
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre>
+<p>begitu pula untuk style</p>
+<h3 id="-props">📥📤 props</h3>
+<p>untuk  membuat props cukup memasukan attribute <code>props=&quot;nama props&quot;</code> sebagai contoh dan anda dapat melakukan binding di dalam content dengan menggunakan <code>{{nama props}}</code></p>
+<pre><code class="lang-html"><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">props</span>=<span class="hljs-string">"nama_user"</span>&gt;</span>
+    hallo </span><span class="hljs-template-variable">{{nama_user}}</span><span class="xml">
+<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span></span>
+</code></pre>
+<p>untuk mengisi nilai dari props anda dapat menggunakan update state yang di miliki oleh seleku dan jika terdapat lebih dari 1 props berikan spasi contoh <code>props=&quot;nama umur&quot;</code></p>
+<h4 id="-inherit-props-"><code>🍂 inherit:props</code></h4>
+<p><code>inherit:props</code> atau props turunan merupakan props yang di turunkan dari suatu component ke pada children nya sebagai contoh di dalam suatu component misalnya <code>h1</code> terdapat suatu <code>span</code> jika h1 memiliki <code>inherit:props</code> maka props yang di minta oleh element children akan di turunkan dari props parent component</p>
+<h3 id="-state">📈 state</h3>
+<p>seleku memiliki state yang di mana state di gunakan untuk membuat atau menetapkan perubahan pada props terdapat 2 jenis state di dalam seleku </p>
+<h5 id="-global-state">📎 global state</h5>
+<p>yaitu state yang dapat mengakses semua props di dalam component dan umumnya untuk menggunakan nya dengan cara menuliskan nama file di ikuti dengan update state contoh</p>
+<pre><code class="lang-js">   //misalkan kita memiliki file utama atau main file
+   //dengan nama app.seleku
+   app.<span class="hljs-keyword">state</span>.nama = <span class="hljs-string">"daberdev"</span>
+</code></pre>
+<p>contoh penerapan pada struktur dengan nama file main nya adalah app.seleku </p>
+<pre><code class="lang-html"><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">props</span>=<span class="hljs-string">"nama_user"</span>&gt;</span>
+    hallo </span><span class="hljs-template-variable">{{nama_user}}</span><span class="xml">
+<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="actionscript">
+app.state.nama_user = <span class="hljs-string">"daberdev"</span>;
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></span>
+</code></pre>
+<h5 id="-local-state">📎 local state</h5>
+<p>merupakan state yang hanya mengakses props dari component yang lebih spesifik untuk
+mengakses component secara spesisifik yaitu dengan menggunakan <code>@id</code> dan di akses menggunakan method <code>find(args: id)</code>, <code>@id</code> berbeda dengan id biasa <code>@id</code> hanya terdefenisi untuk component bukan element html jika ingin memasukan attribute id maka anda dapat memasukan seperti biasa</p>
+<p>contoh penggunaan</p>
+<pre><code class="lang-html"><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">h1</span> @<span class="hljs-attr">id</span>=<span class="hljs-string">"message"</span> <span class="hljs-attr">props</span>=<span class="hljs-string">"nama_user"</span>&gt;</span>
+    hallo </span><span class="hljs-template-variable">{{nama_user}}</span><span class="xml">
+<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="actionscript">
+find(<span class="hljs-string">"message"</span>).state.nama_user = <span class="hljs-string">"daberdev"</span>;
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></span>
+</code></pre>
+<h3 id="-event">⚙ event</h3>
+<p>seleku juga memiliki event handling dengan melakukan set event terhadap element untuk melakukan set event ke element di gunakan method </p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-title">find</span><span class="hljs-params">(args: id)</span></span><span class="hljs-selector-class">.event</span><span class="hljs-selector-class">.event_name</span>
+</code></pre>
+<p>contoh</p>
+<pre><code class="lang-html"><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">h1</span> @<span class="hljs-attr">id</span>=<span class="hljs-string">"message"</span> <span class="hljs-attr">props</span>=<span class="hljs-string">"nama_user"</span> <span class="hljs-attr">event</span>=<span class="hljs-string">"onclick"</span>&gt;</span>
+    hallo </span><span class="hljs-template-variable">{{nama_user}}</span><span class="xml">
+<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+find(<span class="hljs-string">"message"</span>).state.nama_user = <span class="hljs-string">"daberdev"</span>;
+find(<span class="hljs-string">"message"</span>).event.onclick = <span class="hljs-function">(<span class="hljs-params">args</span>)=&gt;</span>{
+    alert(<span class="hljs-string">"aku di click"</span>);
+}
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></span>
+</code></pre>
+<h3 id="-binding">🤝binding</h3>
+<p>seleku dapat melakukan binding yang lebih spesifik seperti melakukan penjumlahan di dalam binding memanggil fungsi, bahkan mengakses object maupun array dari props</p>
+<p>contoh</p>
+<pre><code class="lang-html"><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>
+    hasil 1 + 2 : </span><span class="hljs-template-variable">{{1 + 2}}</span><span class="xml">
+<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span></span>
+</code></pre>
+<p><code>pemberitahuan: seleku saat ini tidak dapat melakukan binding dari 2 props yang berbeda di dalam 1 binding</code></p>
+<h3 id="-dynamic-attribute">💧 dynamic attribute</h3>
+<p>seleku memiliki dynamic attribute ( attribute yang dapat berubah - ubah ) dengan cara memberikan binding ke pada attribute</p>
+<p>contoh</p>
+<pre><code class="lang-html"><span class="hljs-variable">&lt;h1 @id="message" props="nama_user card" class="{{card}}"&gt;</span>
+    hallo {{nama_user}}
+&lt;/h1&gt;
+<span class="hljs-variable">&lt;script&gt;</span>
+find(<span class="hljs-string">"message"</span>).<span class="hljs-keyword">state</span>.nama_user = <span class="hljs-string">"daberdev"</span>;
+find(<span class="hljs-string">"message"</span>).<span class="hljs-keyword">state</span>.card = <span class="hljs-string">"box"</span>;
+&lt;/script&gt;
+</code></pre>
+<h3 id="-seleku-special-component">✨ seleku special component</h3>
+<p>seleku juga memiliki beberapa component bawan yaitu component kondisi dan komponent perulangan</p>
+<h5 id="-condition-component"># condition component</h5>
+<p>untuk penggunaan condition component cukup meletakan attribute <code>condition=&quot;nama props&quot;</code> maka children yang terdapat di dalam component akan di tampikan ketika props nya bernilai true dan akan di destroy ketika bernilai false</p>
+<h5 id="-looping-component"># looping component</h5>
+<p>seleku juga memiliki looping component yaitu component yang akan membuat element berdasarkan list atau array untuk penggunaan yaitu dengan cara memberikan attribute <code>loop=&quot;x of nama props&quot;</code> dan menerapkan props pada component dengan tipe array dan membuat child component dengan attribute dari hasil looping <code>x</code></p>
+<p>contoh</p>
+<pre><code class="lang-html"> &lt;<span class="hljs-selector-tag">ul</span> @id=<span class="hljs-string">"username"</span> props=<span class="hljs-string">"list_user"</span> loop=<span class="hljs-string">"nama of list_user"</span>&gt;
+    &lt;<span class="hljs-selector-tag">li</span> props=<span class="hljs-string">"nama"</span>&gt;nama user {{nama}}&lt;/li&gt;
+ &lt;/ul&gt;
+&lt;script&gt;
+<span class="hljs-function"><span class="hljs-title">find</span><span class="hljs-params">(<span class="hljs-string">"username"</span>)</span></span><span class="hljs-selector-class">.state</span><span class="hljs-selector-class">.list_user</span> = [<span class="hljs-string">"daberdev"</span>,<span class="hljs-string">"seleku"</span>,<span class="hljs-string">"js"</span>]
+&lt;/script&gt;
+</code></pre>
+<h5 id="-import-component"># import component</h5>
+<p>seleku juga memungkinkan anda yang ingin mengimport component dengan menggunakan <code>#import</code> di bagian header file, component yang di import menggunakan import <code>#import</code> tidak boleh memiliki export default, dan <code>#import</code> bisa jyga di gunakan untuk mengimport seperti <code>import</code> pada es 6
+contoh</p>
+<pre><code class="lang-js"><span class="hljs-meta">#import {</span>
+ card
+} from <span class="hljs-string">"card.selekux"</span>
+<span class="hljs-params">&lt;div&gt;</span>
+ <span class="hljs-params">&lt;card&gt;</span><span class="hljs-params">&lt;/card&gt;</span>
+<span class="hljs-params">&lt;/div&gt;</span>
+</code></pre>
+<p>file yang di import harus bertipekan <code>selekux</code> yang berarti merupakan component untuk seleku</p>
+</div>
+
+
+        </div>
+        <script src="index.js"></script>
+</body>
+</html>
