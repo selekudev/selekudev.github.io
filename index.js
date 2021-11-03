@@ -55,7 +55,7 @@ function getContentList(node){
 
 }
 
-document.querySelector(".left-content-d").style.height ="100%";
+document.querySelector(".left-content-d").style.height = innerHeight+"px;
 document.querySelector(".left-content-d").innerHTML = getContentList(document.querySelector(".right-content-d")).join(" ");
 
 
