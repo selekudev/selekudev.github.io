@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
 	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/atom-one-dark.min.css" integrity="sha512-Jk4AqjWsdSzSWCSuQTfYRIF84Rq/eV0G2+tu07byYwHcbTGfdmLrHjUSwvzp5HvbiqK4ibmNwdcG49Y5RGYPTg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
+	<link rel="stylesheet" href="https://stackedit.io/style.css" />
 	<link rel="stylesheet" href="style.css">
 	<style>
 		
@@ -42,13 +43,89 @@
 
 	<div class="content">
 
-		<div class="left-content simple-border" style="width:90%">
-			
-			<h1>seleku API</h1>
-			<p>
-				seleku still developing for now and the new version of seleku is alpha version that's mean seleku is a new framework and does not have any API yet
-			</p>
-			
+		<div class="left-content simple-border stackedit" style="width:90%">
+  <div class="stackedit__left">
+    <div class="stackedit__toc">
+      
+<ul>
+<li><a href="#seleku-api">seleku API</a>
+<ul>
+<li></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+  </div>
+  <div class="stackedit__right">
+    <div class="stackedit__html">
+      <h1 id="seleku-api">seleku API</h1>
+<p>seleku memiliki API yang dapat di gunakan untuk mempermudah anda dalam melakukan pengembangan dengan seleku</p>
+<blockquote>
+<p>hingga saat ini seleku masih dalam tahap <strong>pengembangan</strong> sehingga<br>
+mungkin masih terdapat beberapa bug yang ada di dalam seleku</p>
+</blockquote>
+<h3 id="compiler-api">compiler API</h3>
+<h4 id="precompile">precompile</h4>
+<pre class=" language-mermaid"><svg id="mermaid-svg-ws1LQxat0qpCEyYC" width="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="158" style="max-width: 686.640625px;" viewBox="0 0 686.640625 158"><style>#mermaid-svg-ws1LQxat0qpCEyYC{font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;fill:#000000;}#mermaid-svg-ws1LQxat0qpCEyYC .error-icon{fill:#552222;}#mermaid-svg-ws1LQxat0qpCEyYC .error-text{fill:#552222;stroke:#552222;}#mermaid-svg-ws1LQxat0qpCEyYC .edge-thickness-normal{stroke-width:2px;}#mermaid-svg-ws1LQxat0qpCEyYC .edge-thickness-thick{stroke-width:3.5px;}#mermaid-svg-ws1LQxat0qpCEyYC .edge-pattern-solid{stroke-dasharray:0;}#mermaid-svg-ws1LQxat0qpCEyYC .edge-pattern-dashed{stroke-dasharray:3;}#mermaid-svg-ws1LQxat0qpCEyYC .edge-pattern-dotted{stroke-dasharray:2;}#mermaid-svg-ws1LQxat0qpCEyYC .marker{fill:#666;stroke:#666;}#mermaid-svg-ws1LQxat0qpCEyYC .marker.cross{stroke:#666;}#mermaid-svg-ws1LQxat0qpCEyYC svg{font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;}#mermaid-svg-ws1LQxat0qpCEyYC .label{font-family:"trebuchet ms",verdana,arial,sans-serif;color:#000000;}#mermaid-svg-ws1LQxat0qpCEyYC .cluster-label text{fill:#333;}#mermaid-svg-ws1LQxat0qpCEyYC .cluster-label span{color:#333;}#mermaid-svg-ws1LQxat0qpCEyYC .label text,#mermaid-svg-ws1LQxat0qpCEyYC span{fill:#000000;color:#000000;}#mermaid-svg-ws1LQxat0qpCEyYC .node rect,#mermaid-svg-ws1LQxat0qpCEyYC .node circle,#mermaid-svg-ws1LQxat0qpCEyYC .node ellipse,#mermaid-svg-ws1LQxat0qpCEyYC .node polygon,#mermaid-svg-ws1LQxat0qpCEyYC .node path{fill:#eee;stroke:#999;stroke-width:1px;}#mermaid-svg-ws1LQxat0qpCEyYC .node .label{text-align:center;}#mermaid-svg-ws1LQxat0qpCEyYC .node.clickable{cursor:pointer;}#mermaid-svg-ws1LQxat0qpCEyYC .arrowheadPath{fill:#333333;}#mermaid-svg-ws1LQxat0qpCEyYC .edgePath .path{stroke:#666;stroke-width:1.5px;}#mermaid-svg-ws1LQxat0qpCEyYC .flowchart-link{stroke:#666;fill:none;}#mermaid-svg-ws1LQxat0qpCEyYC .edgeLabel{background-color:white;text-align:center;}#mermaid-svg-ws1LQxat0qpCEyYC .edgeLabel rect{opacity:0.5;background-color:white;fill:white;}#mermaid-svg-ws1LQxat0qpCEyYC .cluster rect{fill:hsl(210,66.6666666667%,95%);stroke:#26a;stroke-width:1px;}#mermaid-svg-ws1LQxat0qpCEyYC .cluster text{fill:#333;}#mermaid-svg-ws1LQxat0qpCEyYC .cluster span{color:#333;}#mermaid-svg-ws1LQxat0qpCEyYC div.mermaidTooltip{position:absolute;text-align:center;max-width:200px;padding:2px;font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:12px;background:hsl(-160,0%,93.3333333333%);border:1px solid #26a;border-radius:2px;pointer-events:none;z-index:100;}#mermaid-svg-ws1LQxat0qpCEyYC:root{--mermaid-font-family:"trebuchet ms",verdana,arial,sans-serif;}#mermaid-svg-ws1LQxat0qpCEyYC flowchart{fill:apa;}</style><g><g class="output"><g class="clusters"></g><g class="edgePaths"><g class="edgePath LS-a LE-b" id="L-a-b" style="opacity: 1;"><path class="path" d="M74.671875,79L99.671875,79L124.671875,79" marker-end="url(https://stackedit.io/app#arrowhead1068)" style="fill:none"></path><defs><marker id="arrowhead1068" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath LS-b LE-get" id="L-b-get" style="opacity: 1;"><path class="path" d="M211.03694661458334,56L250.25,31L310.671875,31" marker-end="url(https://stackedit.io/app#arrowhead1069)" style="fill:none"></path><defs><marker id="arrowhead1069" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath LS-get LE-test" id="L-get-test" style="opacity: 1;"><path class="path" d="M405.265625,31L465.6875,31L498.4710283605366,55.83625132517102" marker-end="url(https://stackedit.io/app#arrowhead1070)" style="fill:none"></path><defs><marker id="arrowhead1070" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath LS-b LE-wo" id="L-b-wo" style="opacity: 1;"><path class="path" d="M211.03694661458334,102L250.25,127L275.25,127" marker-end="url(https://stackedit.io/app#arrowhead1071)" style="fill:none"></path><defs><marker id="arrowhead1071" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath LS-wo LE-test" id="L-wo-test" style="opacity: 1;"><path class="path" d="M440.6875,127L465.6875,127L498.4710283605366,102.16374867482898" marker-end="url(https://stackedit.io/app#arrowhead1072)" style="fill:none"></path><defs><marker id="arrowhead1072" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath LS-test LE-result" id="L-test-result" style="opacity: 1;"><path class="path" d="M567.40625,79L592.40625,79L617.40625,79" marker-end="url(https://stackedit.io/app#arrowhead1073)" style="fill:none"></path><defs><marker id="arrowhead1073" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g></g><g class="edgeLabels"><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-a-b" class="edgeLabel L-LS-a' L-LE-b"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-b-get" class="edgeLabel L-LS-b' L-LE-get"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-get-test" class="edgeLabel L-LS-get' L-LE-test"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-b-wo" class="edgeLabel L-LS-b' L-LE-wo"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-wo-test" class="edgeLabel L-LS-wo' L-LE-test"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-test-result" class="edgeLabel L-LS-test' L-LE-result"></span></div></foreignObject></g></g></g><g class="nodes"><g class="node default" id="flowchart-a-4074" transform="translate(41.3359375,79)" style="opacity: 1;"><rect rx="0" ry="0" x="-33.3359375" y="-23" width="66.671875" height="46" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-23.3359375,-13)"><foreignObject width="46.671875" height="26"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">source</div></foreignObject></g></g></g><g class="node default" id="flowchart-b-4075" transform="translate(174.9609375,79)" style="opacity: 1;"><rect rx="0" ry="0" x="-50.2890625" y="-23" width="100.578125" height="46" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-40.2890625,-13)"><foreignObject width="80.578125" height="26"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">precompile</div></foreignObject></g></g></g><g class="node default" id="flowchart-get-4076" transform="translate(357.96875,31)" style="opacity: 1;"><rect rx="0" ry="0" x="-47.296875" y="-23" width="94.59375" height="46" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-37.296875,-13)"><foreignObject width="74.59375" height="26"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">get source</div></foreignObject></g></g></g><g class="node default" id="flowchart-test-4077" transform="translate(529.046875,79)" style="opacity: 1;"><circle x="-38.359375" y="-23" r="38.359375" class="label-container"></circle><g class="label" transform="translate(0,0)"><g transform="translate(-28.359375,-13)"><foreignObject width="56.71875" height="26"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">compile</div></foreignObject></g></g></g><g class="node default" id="flowchart-wo-4079" transform="translate(357.96875,127)" style="opacity: 1;"><rect rx="0" ry="0" x="-82.71875" y="-23" width="165.4375" height="46" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-72.71875,-13)"><foreignObject width="145.4375" height="26"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">with out precompile</div></foreignObject></g></g></g><g class="node default" id="flowchart-result-4081" transform="translate(648.0234375,79)" style="opacity: 1;"><rect rx="5" ry="5" x="-30.6171875" y="-23" width="61.234375" height="46" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-20.6171875,-13)"><foreignObject width="41.234375" height="26"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">result</div></foreignObject></g></g></g></g></g></g></svg></pre>
+<p>precompile memungkinkan untuk memanipulasi source sebelum di compile seperti <code>css</code> dan <code>javascript</code></p>
+<blockquote>
+<p>precompile hanya bisa mengakses source CSS dan JS dari source yang<br>
+ada bukan dari hasil compile <strong>component</strong></p>
+</blockquote>
+<p>untuk menggunakan precompile anda dapat mengikuti kode berikut ini</p>
+<blockquote>
+<p>berikut ini configurasi pada seleku HMR</p>
+</blockquote>
+<pre class=" language-javascript"><code class="prism  language-javascript"><span class="token keyword">const</span> config <span class="token operator">=</span> <span class="token punctuation">{</span>
+  entryPoints<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'src/app.js'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  bundle<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  outdir<span class="token punctuation">:</span> <span class="token string">'bundle'</span><span class="token punctuation">,</span>
+  platform<span class="token punctuation">:</span> <span class="token string">"neutral"</span><span class="token punctuation">,</span>
+  target<span class="token punctuation">:</span> <span class="token string">"es2017"</span><span class="token punctuation">,</span>
+  write<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+  external<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">"@selekudev"</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  plugins<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+	  <span class="token function">selekuPlugin</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+	  	rootDir<span class="token punctuation">:</span> __dirname<span class="token punctuation">,</span>
+	  	<span class="token function">precompile</span><span class="token punctuation">(</span>args<span class="token punctuation">)</span><span class="token punctuation">{</span>
+
+	  		<span class="token comment">// parameter args akan berisi source CSS dan JS </span>
+	  		<span class="token comment">// dari file seleku</span>
+	
+	  	<span class="token punctuation">}</span>
+	  
+	  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<blockquote>
+<p>berikut ini configurasi pada seleku tanpa HMR</p>
+</blockquote>
+<pre class=" language-javascript"><code class="prism  language-javascript"><span class="token keyword">const</span> config <span class="token operator">=</span> <span class="token punctuation">{</span>
+  entryPoints<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'src/app.js'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  bundle<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  outdir<span class="token punctuation">:</span> <span class="token string">'bundle'</span><span class="token punctuation">,</span>
+  platform<span class="token punctuation">:</span> <span class="token string">"browser"</span><span class="token punctuation">,</span>
+  target<span class="token punctuation">:</span> <span class="token string">"es2017"</span><span class="token punctuation">,</span>
+  plugins<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+	  <span class="token function">selekuPlugin</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+	  	rootDir<span class="token punctuation">:</span> __dirname<span class="token punctuation">,</span>
+	  	<span class="token function">precompile</span><span class="token punctuation">(</span>args<span class="token punctuation">)</span><span class="token punctuation">{</span>
+	  	
+	  		<span class="token comment">// parameter args akan berisi source CSS dan JS </span>
+	  		<span class="token comment">// dari file seleku</span>
+
+	  	<span class="token punctuation">}</span>
+	  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h4 id="esbuild-plugin">esbuild plugin</h4>
+<p>seleku menggunakan esbuild sebagai bundle atau compiler nya sehingga sangat memungkinakan jika anda ingin menggunakan plugin yang di miliki oleh esbuild ke dalam seleku untuk lebih memahami silahka anda kunjungi web dokumentasi esbuild <a href="https://esbuild.github.io/plugins/#using-plugins">using esbuild plugin</a></p>
+
+    </div>
+				</div>		
 		</div>
 
 	</div>
