@@ -170,11 +170,11 @@
     <body>
         <div class="navbar">
             <div class="left">
-                
-                <h3 class="title">Seleku</h3>
+
+                <h3 class="title">Seleku beta</h3>
             </div>
             <div class="right">
-                
+
                 <li>
                     <a href="documentation.html">Documentation</a>
                 </li>
@@ -188,28 +188,19 @@
         </div>
 
         <div id="show-menu" class="responsive-content">
-            <i class='fas fa-bars'></i>
+            <i class="fas fa-bars"></i>
         </div>
-        
+
         <div class="content-d">
-            
 
-            <div class="left-content-d show">
 
-                <h1># list content</h1>
-
-                <div class="menu">
-                    
-                    Apa itu seleku?
-
-                </div>
-                
-            </div>
+            <div class="left-content-d show" style="height: 665px;"><h1># list content</h1> <div class="menu" style="font-size:1.3rem;" onclick="toView(0,115)">--<li class="fas fa-chevron-right" style="font-size: 12px;margin-right:10px;font-weight:bold;"></li> Seleku JS</div> <div class="menu" style="font-size:1.3rem;" onclick="toView(0,189)">--<li class="fas fa-chevron-right" style="font-size: 12px;margin-right:10px;font-weight:bold;"></li> alpha version</div> <div class="menu" style="padding-left:30px;font-size:1rem;" onclick="toView(0,262)"> --<li class="fas fa-chevron-right" style="font-size: 12px;margin-right:10px"></li> 🧠 konsep</div> <div class="menu" style="padding-left:30px;font-size:1rem;" onclick="toView(0,387)"> --<li class="fas fa-chevron-right" style="font-size: 12px;margin-right:10px"></li> kenapa seleku ?</div> <div class="menu" style="font-size:1.3rem;" onclick="toView(0,513)">--<li class="fas fa-chevron-right" style="font-size: 12px;margin-right:10px;font-weight:bold;"></li> 🕹 User Guide</div> <div class="menu" sty
+le="padding-left:30px;font-size:1rem;" onclick="toView(0,586)"> --<li class="fas fa-chevron-right" style="font-size: 12px;margin-right:10px"></li> 📥 instalasi</div> <div class="menu" style="padding-left:30px;font-size:1rem;" onclick="toView(0,1161)"> --<li class="fas fa-chevron-right" style="font-size: 12px;margin-right:10px"></li> 🧠 pemahaman dasar</div> <div onclick="toView(0,1327)" class="menu" style="padding-left:40px;font-size:0.8rem;"> --<li class="fas fa-chevron-right" style="font-size: 12px;margin-right:10px"></li> ⚒ struktur dasar</div> <div onclick="toView(0,1948)" class="menu" style="padding-left:40px;font-size:0.8rem;"> --<li class="fas fa-chevron-right" style="font-size: 12px;margin-right:10px"></li> 📥📤 props</div> <div onclick="toView(0,2247)" class="menu" style="padding-left:50px;font-size:12px;"> --<li class="fas fa-chevron-right" style="font-size: 12px;margin-right:10px"></li> 🍂 inherit:props</div> <div onclick="toView(0,2381)" class="menu" style="padding-left:40px;font-size:0.8rem;"> --<li class="fas fa-chevron-right" style="font-size: 12px;margin-right:10px"></li> 📈 state</div> <div onclick="toView(0,3340)" class="menu" style="padding-left:40px;font-size:0.8rem;"> --<li class="fas fa-chevron-right" style="font-size: 12px;margin-right:10px"></li> ⚙ event</div> <div onclick="toView(0,3833)" class="menu" style="padding-left:40px;font-size:0.8rem;"> --<li class="fas fa-chevron-right" style="font-size: 12px;margin-right:10px"></li> 🤝binding</div> <div onclick="toView(0,4148)" class="menu" style="padding-left:40px;font-size:0.8rem;"> --<li class="fas fa-chevron-right" style="font-size: 12px;margin-right:10px"></li> 💧 dynamic attribute</div> <div onclick="toView(0,4492)" class="menu" style="padding-left:40px;font-size:0.8rem;"> --<li class="fas fa-chevron-right" style="font-size: 12px;margin-right:10px"></li> ✨ seleku special component</div></div>
 
             <div class="right-content-d markdown-body">
-            
+
             <h1 id="seleku-js">Seleku JS</h1>
-            <h1 id="alpha-version">alpha version</h1>
+            <h1 id="alpha-version">Beta version</h1>
             <h2 id="-konsep">🧠 konsep</h2>
             <p>seleku merupakan framework frontend javascript yang di desain khusus dengan berbagai fitur seperti reactivity, data binding dan berbagai macam fitur lain, seleku menggunakan vanilla js sehingga akan berjalan cepat di web browser</p>
             <h2 id="kenapa-seleku-">kenapa seleku ?</h2>
@@ -253,12 +244,12 @@
 </code></pre>
 <p>begitu pula untuk style</p>
 <h3 id="-props">📥📤 props</h3>
-<p>untuk  membuat props cukup memasukan attribute <code>props=&quot;nama props&quot;</code> sebagai contoh dan anda dapat melakukan binding di dalam content dengan menggunakan <code>{{nama props}}</code></p>
+<p>untuk  membuat props cukup memasukan attribute <code>props="nama props"</code> sebagai contoh dan anda dapat melakukan binding di dalam content dengan menggunakan <code>{{nama props}}</code></p>
 <pre><code class="lang-html"><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">props</span>=<span class="hljs-string">"nama_user"</span>&gt;</span>
     hallo </span><span class="hljs-template-variable">{{nama_user}}</span><span class="xml">
 <span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span></span>
 </code></pre>
-<p>untuk mengisi nilai dari props anda dapat menggunakan update state yang di miliki oleh seleku dan jika terdapat lebih dari 1 props berikan spasi contoh <code>props=&quot;nama umur&quot;</code></p>
+<p>untuk mengisi nilai dari props anda dapat menggunakan update state yang di miliki oleh seleku dan jika terdapat lebih dari 1 props berikan spasi contoh <code>props="nama umur"</code></p>
 <h4 id="-inherit-props-"><code>🍂 inherit:props</code></h4>
 <p><code>inherit:props</code> atau props turunan merupakan props yang di turunkan dari suatu component ke pada children nya sebagai contoh di dalam suatu component misalnya <code>h1</code> terdapat suatu <code>span</code> jika h1 memiliki <code>inherit:props</code> maka props yang di minta oleh element children akan di turunkan dari props parent component</p>
 <h3 id="-state">📈 state</h3>
@@ -325,9 +316,9 @@ find(<span class="hljs-string">"message"</span>).<span class="hljs-keyword">stat
 <h3 id="-seleku-special-component">✨ seleku special component</h3>
 <p>seleku juga memiliki beberapa component bawan yaitu component kondisi dan komponent perulangan</p>
 <h5 id="-condition-component"># condition component</h5>
-<p>untuk penggunaan condition component cukup meletakan attribute <code>condition=&quot;nama props&quot;</code> maka children yang terdapat di dalam component akan di tampikan ketika props nya bernilai true dan akan di destroy ketika bernilai false</p>
+<p>untuk penggunaan condition component cukup meletakan attribute <code>condition="nama props"</code> maka children yang terdapat di dalam component akan di tampikan ketika props nya bernilai true dan akan di destroy ketika bernilai false</p>
 <h5 id="-looping-component"># looping component</h5>
-<p>seleku juga memiliki looping component yaitu component yang akan membuat element berdasarkan list atau array untuk penggunaan yaitu dengan cara memberikan attribute <code>loop=&quot;x of nama props&quot;</code> dan menerapkan props pada component dengan tipe array dan membuat child component dengan attribute dari hasil looping <code>x</code></p>
+<p>seleku juga memiliki looping component yaitu component yang akan membuat element berdasarkan list atau array untuk penggunaan yaitu dengan cara memberikan attribute <code>loop="x of nama props"</code> dan menerapkan props pada component dengan tipe array dan membuat child component dengan attribute dari hasil looping <code>x</code></p>
 <p>contoh</p>
 <pre><code class="lang-html"> &lt;<span class="hljs-selector-tag">ul</span> @id=<span class="hljs-string">"username"</span> props=<span class="hljs-string">"list_user"</span> loop=<span class="hljs-string">"nama of list_user"</span>&gt;
     &lt;<span class="hljs-selector-tag">li</span> props=<span class="hljs-string">"nama"</span>&gt;nama user {{nama}}&lt;/li&gt;
@@ -351,6 +342,5 @@ contoh</p>
 
 
         </div>
-        <script src="index.js"></script>
-</body>
+        <script src="index.js"></script></body>
 </html>
