@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="../github-markdown.css">
+	<title>Seleku</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/atom-one-dark.min.css" integrity="sha512-Jk4AqjWsdSzSWCSuQTfYRIF84Rq/eV0G2+tu07byYwHcbTGfdmLrHjUSwvzp5HvbiqK4ibmNwdcG49Y5RGYPTg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
+	<link rel="stylesheet" href="https://stackedit.io/style.css" />
+	<link rel="stylesheet" href="../style.css">
+	<style>
+		
+		span .xml{
+			font-family: 'Roboto Mono', monospace !important;
+		}
+
+	</style>
+</head>
+<body>
+	
+	<div class="navbar">
+		<div class="left">
+			
+			<h3 class="title">Seleku <small style="font-size: 12px; padding: 7px; border-radius: 5px; background: rgba(200,240,200,0.25); color: green;">beta</small></h3>
+
+		</div>
+		<div class="right">
+			
+			<li>
+				<a href="../documentation.html">Documentation</a>
+			</li>
+			<li>
+				<a href="../API.html">API</a>
+			</li>
+			<li>
+				<a href="../community.html">Community</a>
+			</li>
+			<li>
+				<a href="info/">Blog</a>
+			</li>
+
+		</div>
+	</div>
+
+	<div class="content">
+
+	<div class="left-content stackedit" style="width:90%">
+		
+		 <div class="stackedit__left" style="background: white;border-right: 1px solid rgba(0,0,0,0.25);">
+    <div class="stackedit__toc">
+      
+<ul>
+<li><a href="#seleku-with-dezui">Seleku with dezui</a>
+<ul>
+<li>
+<ul>
+<li></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+    </div>
+  </div>
+  <div class="stackedit__right">
+    <div class="stackedit__html">
+      <h1 id="seleku-with-dezui">Seleku with dezui</h1>
+<p>membuat project pertama dengan seleku dan dezui, seleku merupakan framework buatan orang indonesia maupun dezui sehingga kami telah bekerja sama dengan developer dezui dalam tutorial ini</p>
+<h4 id="apa-itu-dezui">apa itu dezui?</h4>
+<blockquote>
+<p>DezUI is a lightweight, minimalist &amp; elegant UI to start a project with a minimalist and elegant design. Checkout<br>
+<a href="https://dezui.netlify.app/">https://dezui.netlify.app</a> for documentation and details</p>
+</blockquote>
+<p>seleku sendiri cukup mudah untuk melakukan manipulasi terhadap output nya melalui precompiler API nya ( <a href="https://selekudev.gtihub.io/API">seleku API</a> )  sehingga sangat di mungkinkan framework sejenis dezui untuk dapat bekerja di atas seleku</p>
+<p>untuk memulai project menggunakan dezui dan seleku anda cukup membuat template project dengan mengetikan<br>
+<code>seleku</code> di command line anda</p>
+<p>silahkan pilih <code>seleku with HMR template</code> kemudian anda silahkan lakukan inisaliasi project</p>
+<p>kemudian silahkan instalasi dezui dengan menjalankan</p>
+<pre class=" language-bash"><code class="prism  language-bash"><span class="token function">npm</span> i dezui@latest
+</code></pre>
+<p>kemudian silahkan buka file <code>app.seleku</code> yang terdapat di dalam folder src kemudian silahkan lakukan import seperti berikut</p>
+<pre class=" language-html"><code class="prism  language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script language-javascript">
+	<span class="token comment">// dezui menggunakan file .css sehingga</span>
+	<span class="token comment">// anda dapat melaukan import seperti di </span>
+	<span class="token comment">// bawah ini</span>
+	<span class="token keyword">import</span> <span class="token operator">*</span> <span class="token keyword">as</span> __dezui <span class="token keyword">from</span> <span class="token string">"dezui/core.css"</span>	
+
+</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<p>kemudian anda dapat menggunakan class yang terdapat di dezui di dalam file app.seleku sebagai contoh</p>
+<blockquote>
+<p>app.seleku</p>
+</blockquote>
+<pre class=" language-html"><code class="prism  language-html"> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>nav</span><span class="token punctuation">&gt;</span></span>
+	 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>section</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>navbar-section<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+		  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>navbar-logo<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>/<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Brand<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+		  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Link 1<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+		  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Link 2<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+		  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Link 3<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+	 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>section</span><span class="token punctuation">&gt;</span></span>
+ <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>nav</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+ 
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script language-javascript">
+	<span class="token comment">// dezui menggunakan file .css sehingga</span>
+	<span class="token comment">// anda dapat melakukan import seperti di </span>
+	<span class="token comment">// bawah ini</span>
+	<span class="token keyword">import</span> <span class="token operator">*</span> <span class="token keyword">as</span> __dezui <span class="token keyword">from</span> <span class="token string">"dezui/core.css"</span>	
+
+</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<p>silahkan save file  <code>app.seleku</code> kemudian anda akan melihat hasil di web anda sekarang telah terdapat navbar yang di style menggunakan dezui framework</p>
+<p><code>#seleku</code> <code>#dezui</code></p>
+
+    </div>
+  </div>
+
+	</div>
+
+</body>
+</html>
