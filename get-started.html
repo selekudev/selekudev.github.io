@@ -170,11 +170,11 @@
     <body>
         <div class="navbar">
             <div class="left">
-                
+
                 <h3 class="title">Seleku</h3>
             </div>
             <div class="right">
-                
+
                 <li>
                     <a href="documentation.html">Documentation</a>
                 </li>
@@ -188,26 +188,16 @@
         </div>
 
         <div id="show-menu" class="responsive-content">
-            <i class='fas fa-bars'></i>
+            <i class="fas fa-bars"></i>
         </div>
-        
+
         <div class="content-d">
-            
 
-            <div class="left-content-d show">
 
-                <h1># list content</h1>
-
-                <div class="menu">
-                    
-                    Apa itu seleku?
-
-                </div>
-                
-            </div>
+            <div class="left-content-d show" style="height: 665px;"><h1># list content</h1> <div class="menu" style="font-size:1.3rem;" onclick="toView(0,115)">--<li class="fas fa-chevron-right" style="font-size: 12px;margin-right:10px;font-weight:bold;"></li> Get Started</div> <div class="menu" style="padding-left:30px;font-size:1rem;" onclick="toView(0,189)"> --<li class="fas fa-chevron-right" style="font-size: 12px;margin-right:10px"></li> instalasi</div> <div onclick="toView(0,542)" class="menu" style="padding-left:50px;font-size:12px;"> --<li class="fas fa-chevron-right" style="font-size: 12px;margin-right:10px"></li> cdn</div> <div onclick="toView(0,2328)" class="menu" style="padding-left:50px;font-size:12px;"> --<li class="fas fa-chevron-right" style="font-size: 12px;margin-right:10px"></li> node</div> <div class="menu" style="padding-left:30px;font-size:1rem;" onclick="toView(0,2808)"> --<li class="fas fa-chevron-right" style="font-size: 12px;margin-right:10px"></li> project pertama</div></div>
 
           <div class="right-content-d markdown-body">
-            
+
              <h1 id="get-started">Get Started</h1>
 <h2 id="instalasi">instalasi</h2>
 <p>untuk dapat menggunakan seleku anda harus mempersiapkan envoritment nya terlebih dahulu</p>
@@ -216,7 +206,7 @@
 <li>Pemahaman dasar tentang javascript</li>
 <li>memahami tentang penggunaan npm <code>node package manager</code></li>
 </ul>
-<p>seleku juga memiliki cdn jika anda tidak dapat menggunakan seleku di dalam lokal envoritmen anda di karenakan beberapa kendala kami menyediakan solusi lain yaitu menggunakan cdn seleku, seleku berjalan di atas system nya sendiri dan mengomcpile syntax dari selekux ke dalam syntax javascript, dan terdaoat dua versi dari compiler yaitu</p>
+<p>seleku juga memiliki cdn jika anda tidak dapat menggunakan seleku di dalam lokal envoritmen anda di karenakan beberapa kendala kami menyediakan solusi lain yaitu menggunakan cdn seleku, seleku berjalan di atas system nya sendiri dan meng-compile syntax dari selekux ke dalam syntax javascript, dan terdapat dua versi dari compiler yaitu</p>
 <ol>
 <li>node js compiler <code>(@selekudev/selekuCompiler)</code></li>
 <li>dan dengan CDN</li>
@@ -271,7 +261,7 @@
 
             <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
 
-                App.render(<span class="hljs-built_in">document</span>.body);        
+                App.render(<span class="hljs-built_in">document</span>.body);
                 App.state.user = <span class="hljs-string">"daber"</span>;
 
                 <span class="hljs-keyword">let</span> count = <span class="hljs-number">0</span>;
@@ -281,7 +271,7 @@
                     App.state.count = count;
                 },<span class="hljs-number">500</span>);
 
-            <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">\</span>/<span class="hljs-attr">script</span>&gt;</span></span>
+            <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name"></span>/<span class="hljs-attr">script</span>&gt;</span></span>
         <span class="hljs-string">`);
 
         StyleSheet(app.CSS);
@@ -293,10 +283,10 @@
 <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
 </code></pre>
 <h4 id="node">node</h4>
-<p>kekurangan dari penggunaan cdn adalah anda tidak dapat melakukan import component <code>(.selekux)</code> secara langsung dan untuk melakukan import secara ;angsung hanya di mungkinkan dengan menggunakan node</p>
+<p>kekurangan dari penggunaan cdn adalah anda tidak dapat melakukan import component <code>(.selekux)</code> secara langsung dan untuk melakukan import secara langsung hanya di mungkinkan dengan menggunakan node</p>
 <p>untuk instalasi silahkan buka command promt (CMD) / terminal dan pastikan anda telah memiliki node js dan npm terinstall di device anda </p>
 <p>dengan cara jalankan perintah</p>
-<p>untuk mengecheck versi node 
+<p>untuk mengecheck versi node
 <code>node --version</code>
 untuk mengecheck versi npm
 <code>npm --version</code></p>
@@ -310,9 +300,9 @@ untuk mengecheck versi npm
 <p>setelah melakukan instalasi menggunakan node untuk membuat project pertama anda, anda hanya cukup menjalankan seleku secara lokal dengan melalui command promt (CMD) / terminal yaitu dengan menjalankan</p>
 <pre><code class="lang-bash"><span class="hljs-attribute">seleku</span>
 </code></pre>
-<p>kemudian anda akan di minta untuk menetukan template project yang akan di gunakan anda dapat memilih sesuai dengan kebuuhan anda tapi anda dapat meilih template seleku saja</p>
+<p>kemudian anda akan di minta untuk menentukan template project yang akan di gunakan anda dapat memilih sesuai dengan kebutuhan anda tapi anda dapat memilih template seleku saja</p>
 <p>kemudian setelah anda memilih template anda akan di mintai untuk mengisi nama project silahkan anda isi sesuka hati anda</p>
-<p>setelah memembuat template project anda harus melakukan instalasi node modules terlebih dahulu yaitu dengan cara </p>
+<p>setelah membuat template project anda harus melakukan instalasi node_modules terlebih dahulu yaitu dengan cara </p>
 <pre><code><span class="hljs-built_in">npm</span> i
 </code></pre><p>kemudian untuk menjalankan project secara lokal anda dapat menggunakan perintah</p>
 <pre><code>npm <span class="hljs-keyword">run</span><span class="bash"> dev</span>
@@ -321,12 +311,12 @@ untuk mengecheck versi npm
 <pre><code>npm <span class="hljs-keyword">run</span><span class="bash"> build</span>
 </code></pre><p>dan hasil build di simpan di dalam folder bundle</p>
 <p>untuk mempelajari lebih jauh silahkan kunjungi dokumentasi kami </p>
-<p><a href="http://selekudev.github.io/documentation">seleku documantation</a></p>
+<p><a href="http://selekudev.github.io/documentation">seleku documantation</a></p><p><br></p><p><br></p>
 
-            
+
           </div>
-            
-         
+
+
         </div>
         <script src="index.js"></script>
 </body>
